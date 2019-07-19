@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Animation</title>
+</head>
+<body>
+    <h1>Animation With MaxTween</h1>
+    <button id="cta">Watch here</button>
+
+    <div class="panel">
+        <img id="img" src="instagram.png" alt="">
+        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos vero necessitatibus, blanditiis eveniet incidunt asperiores, voluptatibus nemo expedita architecto praesentium, illum sed eaque dignissimos possimus eos est. Eligendi, ipsam!</p>
+        <div class="box"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script>
+        document.getElementById("cta").addEventListener('click', function () {
+            TweenMax.to(".panel", 1.5, {scaleY: 1, height:'100vh'});
+            TweenMax.to('#img', 1, {opacity:1, y:30, delay:1, ease: Back.easeInOut.config(1.7)});
+            TweenMax.to('.text',1,{opacity:1, y:30, delay:1.5, ease: Back.easeInOut.config(1.7)});
+            TweenMax.to(".box",3,{opacity:1,scale:2,ease: Elastic.easeInOut.config(1, 0.4)});
+        })
+    
+    </script>
+</body>
+</html>

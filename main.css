@@ -1,0 +1,67 @@
+body{
+    font-family: 'Montserrat';
+    padding:9em;
+
+}
+
+h1 {
+    font-size: 5em;
+    width: 25%;
+    color: red;
+    line-height: 1em;
+
+}
+
+button {
+    background:none;
+    border: 1px solid black;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.7em;
+    padding:.5em 1em;
+    cursor:pointer;
+}
+
+.panel{
+    position: absolute;
+    padding:30px;
+    width:40%;
+    bottom:0;
+    right:0;
+    background: #eee;
+    box-sizing: border-box;
+    padding: 7% 7%;
+    /* height: 90vh; */
+    transform: scaleY(0);
+    transform-origin:bottom;
+    text-align:center;
+}
+
+img{
+    margin-right:50px;
+    width:120px;
+    float:center;
+    opacity: 0;
+}
+
+p{
+    display: inline-block;
+    height:50%;
+    font-size: 1em;
+    width: 80%;
+    opacity:0;
+    text-align:left;
+}
+
+.box{
+    border:5px solid lightgray;
+    width: 15rem;
+    height: 15rem;
+    position:absolute;
+    top:25%;
+    right:30%;
+
+    opacity: 0;
+    z-index: -1;
+    transform: scale(0);
+}
